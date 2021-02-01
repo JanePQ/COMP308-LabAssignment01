@@ -1,7 +1,7 @@
 {
-  "name": "interactiveexercise2",
+  "name": "labassignment01",
   "version": "1.0.0",
-  "description": "Interactive Exercise#2",
+  "description": "Lab Assignment 1",
   "main": "server.js",
   "scripts": {
     "start": "node server",
@@ -24,10 +24,10 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/JanePQ/InteractiveExercise2.git"
+    "url": "git+https://github.com/JanePQ/COMP308-LabAssignment01.git"
   },
   "bugs": {
-    "url": "https://github.com/JanePQ/InteractiveExercise2/issues"
+    "url": "https://github.com/JanePQ/COMP308-LabAssignment01/issues"
   },
-  "homepage": "https://github.com/JanePQ/InteractiveExercise2#readme"
+  "homepage": "https://github.com/JanePQ/COMP308-LabAssignment01#readme"
 }
