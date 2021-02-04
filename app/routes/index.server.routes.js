@@ -2,6 +2,7 @@
 module.exports = function (app) {
     //load the controller(s)
     var index = require('../controllers/index.server.controller');
+    var form = require('../controllers/form.server.controller');
     
     //handle the routing of get request to the route
     //by showing the login screen
@@ -10,11 +11,20 @@ module.exports = function (app) {
         res.render('index', { loginMessage: 'Please login' });
 
     });
-    //the form uses a post request to the same path ('/')
-    app.post('/', function (req, res) {
-        //use the controller function
-        index.displayInfo(req, res);
-        
+
+    //did you specify the action in the form 
+    app.post('/', function (req, res, next) {
+        //display login page
+        res.render('form', { loginMessage: 'Form' });
+
     });
 
+     //the form uses a post request to the same path ('/')
+    // this will only accept the request : https://localhost:3000/thankyou (POST req)
+    app.post('/thankyou', function (req, res) {
+        //use the controller function
+        index.displayInfo(req, res);
+        form.formInfo(req, res); // it says forminfo isnot a function
+        
+    });
 };

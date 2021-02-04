@@ -6,28 +6,52 @@
     <title></title>
 </head>
 
+ <!-- CSS Section -->
+ <link rel="stylesheet" href="" />
+ <link href="//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+ <link rel="stylesheet" href="font-awesome/css/font-awesome.min.css" />
+
 <body>
-<form>
-  <div class="form-group">
-    <label for="exampleFormControlInput1">Course code</label>
-    <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
+<h1 class= float-center></h1>
+ <form method="post" action="/thankyou">
+    <div class="panel-body">
+			<form accept-charset="UTF-8" role="form">
+            <fieldset>
+			<div class="form-group">
+            <div class="container">
+    <div class="row">
+		<div class="col-md-4 col-md-offset-4">
+    		<div class="panel panel-default">
+			  	<div class="panel-heading">
+			    	<h3 class="panel-title">STUDENT INFORMATION</h3></div>
+                 <div class="panel-body">
+			    	<form accept-charset="UTF-8" role="form">
+                    <fieldset>
+			    	  	<div class="form-group">
+    <label for="exampleFormControlInput1">Course code: </label>
+    <input class="form-control" input type="text" >
   </div>
 
   <div class="form-group">
-    <label for="exampleFormControlInput1">Course Name</label>
-    <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
+    <label for="exampleFormControlInput1">Course Name: </label>
+    <input class="form-control" input type="text">
   </div>
 
   <div class="form-group">
-    <label for="exampleFormControlInput1">Student email</label>
-    <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
+    <label for="exampleFormControlInput1">Student email:</label>
+    <input class="form-control" input type="email" size="30" placeholder="Enter your user email" name="username" placeholder="name@example.com">
   </div>
 
   <div class="form-group">
-    <label for="exampleFormControlTextarea1">Your comments</label>
-    <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
-  </div>
+    <label for="exampleFormControlTextarea1">Your comments:</label>
+    <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" name="message"></textarea>
+  </div><br>
+  <input class="btn btn-lg btn-success btn-block" input type="submit" value="Submit" name="submit">
 </form>
+
+ <!-- JavaScript Section -->
+<script src="//netdna.bootstrapcdn.com/bootstrap/3.0.0/js/bootstrap.min.js"></script>
+<script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
 
   </body>
 </html>
