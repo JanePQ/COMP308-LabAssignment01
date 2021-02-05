@@ -12,8 +12,7 @@ module.exports = function (app) {
 
     });
 
-    //did you specify the action in the form 
-    app.post('/', function (req, res, next) {
+        app.post('/', function (req, res, next) {
         //display login page
         res.render('form', { loginMessage: 'Form' });
 
@@ -24,7 +23,7 @@ module.exports = function (app) {
     app.post('/thankyou', function (req, res) {
         //use the controller function
         index.displayInfo(req, res);
-        form.formInfo(req, res); // it says forminfo isnot a function
+        form.formInfo(req, res);
         
     });
 };
