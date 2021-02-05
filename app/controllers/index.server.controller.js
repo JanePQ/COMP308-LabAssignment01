@@ -4,6 +4,7 @@ exports.displayInfo = function (req, res) {
 
     //get user input using request object
     var username = req.body.username;
+    var comments = req.body.comments;
     //make a reference to the session object
     var session = req.session;
     //store the username in session object
@@ -12,7 +13,8 @@ exports.displayInfo = function (req, res) {
     //show the display.ejs page and pass username to it
     res.render('display', {
         username: username,
-        message:"Thank you for registering",
+        //comments:"Welcome to the Course!",
+        comments: comments
     });   
 
 }; //end of function

@@ -3,15 +3,15 @@
 exports.formInfo = function (req, res) {
 
     //get user input using request object
-    var message = req.body.message;
+    var comments = req.body.comments;
     //make a reference to the session object
     var session = req.session;
     //store the username in session object
-    session.message = message;
-    console.log("message in session: " + session.message);
+    session.comments = comments;
+    console.log("message in session: " + session.comments);
     //show the display.ejs page and pass username to it
-    res.render('form', {
-        message: message
+    res.render('display', {
+        comments: comments
     });   
 
 }; //end of function
